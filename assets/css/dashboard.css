@@ -55,7 +55,6 @@
 
 /* Team */
 .team__container {
-    height: calc(100vh - var(--header-height));
     align-items: center;
 
 }
