@@ -1,0 +1,129 @@
+/* solution */
+.solution__container {
+    row-gap: 2rem;
+
+}
+
+.solution__content {
+    padding: 1.5rem .5rem;
+    background: var(--first-color);
+    border-radius: .3rem ;
+    text-align: center;
+    height: 250px;
+
+    transition: 300ms;
+    position: relative;
+}
+
+.solution__content:hover {
+    box-shadow: 5px 5px 4px rgba(0,0,0, .4);
+    bottom: .3rem;
+}
+
+.solution__icon {
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: var(--accent-color);
+    color: var(--first-color);
+    border-radius: 30%;
+    margin-bottom: var(--mb-2);
+}
+
+.solution__title {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    margin-bottom: var(--mb-1);
+}
+
+.solution__description {
+    font-weight: var(--font-medium);
+    font-size: var(--smaller-font-size);
+}
+
+
+/* Team */
+.team__container {
+    height: calc(100vh - var(--header-height));
+    align-items: center;
+
+}
+
+.team__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: max-content;
+    text-align: center;
+
+    background-color: var(--first-color);
+
+    padding-top: 4rem;
+    margin-top: var(--mb-5);
+
+    border-radius: .3rem;
+    border-bottom: 2px solid var(--accent-color);
+
+    transition: 300ms;
+}
+
+.team__card:hover {
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0, .3);
+}
+
+.team__img {
+    padding-top: 1.3rem;
+    padding-left: .8rem;
+
+    width: 160px;
+    height: 160px;
+
+    background-color: var(--accent-color);
+
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: var(--mb-2);
+
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0, .3);
+
+}
+
+.team__img img {
+    margin-left: -9px;
+}
+
+.team__title {
+    font-size: var(--h3-font-size);
+    color: var(--accent-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.team__title span {
+    font-size: var(--small-font-size);
+    color: var(--sub-color);
+    margin-bottom: var(--mb-3);
+}
+
+.team__social {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.team__social-link {
+    display: inline-flex;
+
+    font-size: 1.1rem;
+    border-radius: 50%;
+
+    padding: .4rem;
+    margin: 0 var(--mb-1);
+    transform: .3rem;
+    transition: 300ms;
+
+    color: var(--sub-color);
+}
+
+.team__social-link:hover {
+    background-color: var(--accent-color);
+    color: var(--first-color);
+}

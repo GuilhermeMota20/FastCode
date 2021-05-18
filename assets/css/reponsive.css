@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+    .nav__menu {
+        width: var(--nav-width);
+    }
+
+    .solution__container,
+    .team__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+        padding-left: var(--nav-width);
+    }
+
+    .nav__toggle, .nav__close {
+        display: none;
+    }
+
+    .nav__logo {
+        position: fixed;
+        z-index: 200;
+        left: 7rem;
+    }
+
+    .nav__menu {
+        left: 0;
+    }
+
+    .solution__container,
+    .team__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

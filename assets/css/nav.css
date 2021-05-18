@@ -1,0 +1,139 @@
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo > img {
+    height: 80px;
+    margin-top: var(--mb-2);
+}
+
+.nav__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100vh;
+    padding: 3rem;
+    display: flex ;
+    align-items: center;
+    background: var(--first-color);
+    transition: 500ms;
+}
+
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.nav__item {
+    margin-bottom: var(--mb-4);
+}
+
+.nav__link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: .75rem;
+    padding: .75rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: 300ms;
+    cursor: pointer;
+    width: 13rem;
+}
+
+.nav__link:hover {
+    background-color: var(--accent-color);
+}
+
+.nav__toggle {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.nav__icon {
+    font-size: 1.25rem;
+}
+
+.nav__nome {
+    font-size: var(--samll-fontsize);
+}
+
+.nav__link-config {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: .75rem;
+    padding: .75rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: 300ms;
+    cursor: pointer;
+    width: 13rem;
+
+}
+
+.nav__link-config:hover {
+    background-color: var(--accent-color);
+
+}
+
+
+/*  Show Menu  */
+.show {
+    left: 0;
+}
+
+/* Active menu */
+.active {
+    background-color: var(--accent-color);
+
+}
+
+/* Collapse */
+.collapse {
+    grid-template-columns: 20px max-content 1fr;
+}
+
+.collapse__link {
+    justify-self: flex-end;
+    transition: 500ms;
+
+}
+
+.collapse__menu {
+    display: none;
+    padding: .75rem 2.25rem;
+}
+
+.collapse__sublink {
+    color: var(--sub-color);
+    font-size: var(--small-font-size);
+    text-transform: none;
+}
+
+.collapse__sublink:hover {
+    color: var(--text-color);
+}
+
+/* Animação collapse */
+.showCollapse {
+    display: block;
+}
+
+/* Rotation for icon */
+.rotate {
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
