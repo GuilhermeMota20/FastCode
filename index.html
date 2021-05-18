@@ -64,7 +64,7 @@
                         <span class="nav__nome">Equipe</span>
                     </a>
 
-                    <a href="#message" class="nav__item nav__link">
+                    <a href="#contact" class="nav__item nav__link">
                         <i class='bx bx-message-square-detail nav__icon'></i>
                         <span class="nav__nome">Mensagem</span>
                     </a>
@@ -274,13 +274,44 @@
         </section>
 
         <!-- Message -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title contact-title">Entre em contato</h2>
+            <span class="section-subtitle contact-subtlite">Contate-me</span>
 
+            <div class="contact__container bd-grid">
+                <form action="https://api.staticforms.xyz/submit" method="post" class="contact__form">
+                    <input type="hidden" name="accessKey" value="330ef44e-23a7-4019-8941-a3ed7b795e22">
+
+                    <input type="hidden" name="redirectTo" value="http://gmota.lovestoblog.com/sent.html">
+
+                    <div class="contact__inputs">
+                        <input required type="text" placeholder="Nome" class="contact__input" name="name">
+
+                        <input required type="email" placeholder="E-mail" class="contact__input" name="email">
+                    </div>
+
+                   <input required type="text" placeholder="Assunto" class="contact__input" name="subject">
+
+                    <textarea required cols="0" rows="10" placeholder="Mensagem" class="contact__input" name="message"></textarea>
+
+                    <div class="content__btn">
+                        <input type="submit" value="Enviar mensagem" class="button contact__button">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <div class="bg-img">
+            <img width="100%" src="assets/img/4.png" alt="">
+        </div>
 
     </section>
 
 
     <!-- Footer -->
-
+    <footer class="section">
+        <h2 class="section-title">footer aqui...</h2>
+    </footer>
 
     <!-- Show up -->
 
