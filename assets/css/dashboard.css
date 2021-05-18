@@ -1,4 +1,14 @@
+/* Home */
+.bg-img {
+    box-shadow: none;
+}
+
+
 /* solution */
+.solution {
+    background-color: var(--accent-color);
+}
+
 .solution__container {
     row-gap: 2rem;
 
