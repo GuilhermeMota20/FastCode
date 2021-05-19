@@ -173,7 +173,7 @@ img {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
     height: 10px;
 }
 
@@ -184,5 +184,5 @@ img {
 ::-webkit-scrollbar-thumb {
     background: var(--accent-color);
     border-radius: .4rem;
-    border-left: 2px solid var(--first-color);
+    border-left: 1px solid var(--first-color);
 }
