@@ -187,7 +187,7 @@
 
 .content__btn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -196,13 +196,15 @@
     border: none;
     border-radius: .3rem;
 
+    width: 90%;
+
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 
     cursor: pointer;
 
     background-color: var(--first-color);
-    color: var(--text-color);
+    color: var(--sub-color);
     padding: 1rem .7rem;
 
     transition: 300ms;
@@ -210,5 +212,6 @@
 
 .contact__button:hover {
     background-color: var(--bg-color);
+    color: var(--text-color);
 }
     
