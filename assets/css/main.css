@@ -9,11 +9,10 @@
 
     /* colors */
     --text-color: #fffafa;
-    --bg-color: #100e17;  /* #19233e */
+    --bg-color: #100e17; /* #19233e */
     --first-color: #17141d; /*  */
     --sub-color: #b6cefc;
-    --accent-color: #32BE8F; /* cor de destaque */
-
+    --accent-color: #32be8f; /* cor de destaque */
 
     /* Font and typography */
     --body-font: "Poppins", sans-serif;
@@ -45,13 +44,15 @@
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
     }
 }
 
 /* base */
-*,::before,::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -69,7 +70,10 @@ body {
     line-height: 1.6;
 }
 
-h1,h2,h3,p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
@@ -111,7 +115,7 @@ img {
     color: var(--sub-color);
     text-align: center;
     font-weight: var(--font-bold);
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
 }
 
 /* layout */
@@ -132,5 +136,53 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--bg-color);
-    box-shadow: 0 2px 4px rgba(0,0,0, .3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*  Scroll top */
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+
+    background-color: var(--first-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    z-index: var(--z-modal);
+    transition: 300ms;
+
+    visibility: hidden;
+}
+
+.scrolltop__icon {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.show-scroll {
+    visibility: visible;
+    bottom: 5rem;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: .4rem;
+    border-left: 2px solid var(--first-color);
 }
