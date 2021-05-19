@@ -41,6 +41,6 @@
 
     .solution__container,
     .team__container {
-        grid-template-columns: repeat(2, .5fr);
+        grid-template-columns: repeat(3, .5fr);
     }
 }
