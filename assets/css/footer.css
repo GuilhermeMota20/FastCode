@@ -35,5 +35,6 @@
 
 .footer-subtlite {
     margin-bottom: 3rem;
+    margin-top: 1rem;
     font-size: var(--smaller-font-size);
 }
