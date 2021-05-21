@@ -78,4 +78,8 @@ h2 {
     h1 {
         font-size: 5rem;
     }
+
+    .error__container {
+        margin-top: 8rem;
+    }
 }
