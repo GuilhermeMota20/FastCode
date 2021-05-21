@@ -73,6 +73,7 @@ h2 {
     body {
         background-image: none;
         background: linear-gradient(35deg, #100e10 0%, #1f1b27 67%);
+        background-repeat: no-repeat;
     }
 
     h1 {
