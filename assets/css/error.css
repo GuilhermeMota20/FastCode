@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-image: url(../img/bg-error.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background: linear-gradient(35deg, #100e10 0%, #1f1b27 67%); */
+
+    text-align: center;
+
+}
+
+p {
+    color: var(--sub-color);
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: var(--font-bold);
+    color: var(--accent-color);
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: var(--mb-3);
+}
+
+.error__container {
+    width: auto;
+    height: auto;
+}
+
+.error__content{
+    width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Button */
+.buttons__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.error__btn {
+    display: inline;
+    margin: 3rem .5rem;
+    padding: .6rem 2rem;
+
+    border-radius: .3rem;
+    border: none;
+
+    font-weight: var(--font-bold);
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    outline: none;
+    cursor: pointer;
+
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+    transition:300ms;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+        background: linear-gradient(35deg, #100e10 0%, #1f1b27 67%);
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+}
