@@ -83,7 +83,7 @@ h2 {
         font-size: 5rem;
     }
 
-    .error__container {
-        margin-top: 8rem;
+    p {
+        padding: 0;
     }
 }
