@@ -76,7 +76,7 @@ h2 {
 @media screen and (max-width: 768px) {
     body {
         background-image: none;
-        background: var(--first-color);
+        background: linear-gradient(35deg, #100e10 0%, #1f1b27 67%);
     }
 
     h1 {

@@ -11,7 +11,7 @@
 
     .solution__container,
     .team__container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, .5fr);
     }
 
     .content__btn {
@@ -45,8 +45,4 @@
         left: 0;
     }
 
-    .solution__container,
-    .team__container {
-        grid-template-columns: repeat(3, .5fr);
-    }
 }

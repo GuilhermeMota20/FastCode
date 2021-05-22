@@ -182,6 +182,6 @@ img {
 
 ::-webkit-scrollbar-thumb {
     background: var(--accent-color);
-    border-radius: .4rem;
+    border-radius: .3rem;
     border-left: 1px solid var(--first-color);
 }
