@@ -1,3 +1,9 @@
+@media screen and (min-width: 320px) {
+    .solution__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .nav__menu {
         width: var(--nav-width);
@@ -5,7 +11,7 @@
 
     .solution__container,
     .team__container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .content__btn {
